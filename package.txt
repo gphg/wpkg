@@ -1,0 +1,11 @@
+# This file may be used to download dependant files or libraries via wget.
+# Each line is one downloadable file. The format to adhere to is:
+#
+# <DOWNLOAD_URL> <TARGET_FILENAME> <EXPECTED_SHA1_CHECKSUM>
+#
+# Example:
+# http://example.com/some/foo.jar vendor/bar.jar 1b4757da1075bf9faf8fa34bafcbd2422ae6c714
+#
+# The target folders must be existing prior to downloading.
+#
+http://www.apache.org/dist/tika/tika-app-1.5.jar tika.jar 7f3657da1075bf95ac8faa2bafcba24228e6c714
