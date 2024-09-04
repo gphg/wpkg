@@ -1,5 +1,5 @@
 # This file may be used to download dependant files or libraries via wget.
-# Each line is one downloadable file, sperated by tab. The format to adhere to is:
+# Each line is one downloadable file, separated by tab. The format to adhere to is:
 #
 # <DOWNLOAD_URL>	<TARGET_FILENAME>	<EXPECTED_HASH_CHECKSUM>
 #
