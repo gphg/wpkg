@@ -1,13 +1,13 @@
 # Wget Package Manager
 
 Small shell script that downloads files given in a text file via ```wget``` and
-verifies the downloaded files via the given expected sha1 checksums.
+verifies the downloaded files via the given expected hash checksums.
 
 By default the script uses a ```package.txt``` in the current directory. The
 format of the package list file is:
 
 ```
-<DOWNLOAD_URL> <TARGET_FILENAME> <EXPECTED_SHA1_CHECKSUM>
+<DOWNLOAD_URL>	<TARGET_FILENAME>	<HASH_ALGO>:<EXPECTED_HASH_CHECKSUM>
 ```
 
 Have a look at the [package.txt](package.txt) file in this repository for an
@@ -23,4 +23,3 @@ WGET_PACKAGES_FILE=path/to/your/file wget-packages.sh
 
 Please contribute by [forking](http://help.github.com/forking/) and sending a
 [pull request](http://help.github.com/pull-requests/). The license is MIT.
-

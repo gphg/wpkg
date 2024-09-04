@@ -1,7 +1,7 @@
 # This file may be used to download dependant files or libraries via wget.
 # Each line is one downloadable file, separated by tab. The format to adhere to is:
 #
-# <DOWNLOAD_URL>	<TARGET_FILENAME>	<EXPECTED_HASH_CHECKSUM>
+# <DOWNLOAD_URL>	<TARGET_FILENAME>	<HASH_ALGO>:<EXPECTED_HASH_CHECKSUM>
 #
 # Example:
 # http://example.com/some/foo.jar	vendor/bar.jar	sha1:1b4757da1075bf9faf8fa34bafcbd2422ae6c714

@@ -1,10 +1,22 @@
 #!/usr/bin/env sh
 
+# Wget Package Manager
+# Simple shell script that acts as a wget package manager with hash checksum verification.
+#
+# MIT License
+# Copyright (c) 2014 Steffen Gransow
+#
+# URL: https://github.com/gphg/wpkg (forked)
+
 CURRENT_DIR=$(readlink -m $(dirname $0))
 
 # default packages file if not given via ENVIRONMENT
 if [ -z "$WGET_PACKAGES_FILE" ] ; then
-    WGET_PACKAGES_FILE=$(readlink -m "${CURRENT_DIR}/package.txt")
+    if [ -f "${PWD}/package.txt" ] ; then
+        WGET_PACKAGES_FILE=$(readlink -m "${PWD}/package.txt")
+    else
+        WGET_PACKAGES_FILE=$(readlink -m "${CURRENT_DIR}/package.txt")
+    fi
 fi
 
 echo "[INFO] Downloading packages listed in:" $WGET_PACKAGES_FILE
