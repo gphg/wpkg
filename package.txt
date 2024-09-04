@@ -1,11 +1,13 @@
 # This file may be used to download dependant files or libraries via wget.
-# Each line is one downloadable file. The format to adhere to is:
+# Each line is one downloadable file, sperated by tab. The format to adhere to is:
 #
-# <DOWNLOAD_URL> <TARGET_FILENAME> <EXPECTED_SHA1_CHECKSUM>
+# <DOWNLOAD_URL>	<TARGET_FILENAME>	<EXPECTED_HASH_CHECKSUM>
 #
 # Example:
-# http://example.com/some/foo.jar vendor/bar.jar 1b4757da1075bf9faf8fa34bafcbd2422ae6c714
+# http://example.com/some/foo.jar	vendor/bar.jar	sha1:1b4757da1075bf9faf8fa34bafcbd2422ae6c714
 #
 # The target folders must be existing prior to downloading.
 #
-http://www.apache.org/dist/tika/tika-app-1.5.jar tika.jar 7f3657da1075bf95ac8faa2bafcba24228e6c714
+https://downloads.apache.org/tika/2.9.2/tika-app-2.9.2.jar	tika.jar	sha512:55fe5fd70fefc2d0ca30abac024d5c659dc62a437741b52276fc7cd90be31f133a0a6e528863e81f642eab3e0c39690e63abb52f580e4261d4ac5bfd52934e25
+#gh:KilledByAPixel/LittleJS/raw/v1.9.4/dist/littlejs.min.js	vendor/littlejs.min.js	sha1:dbd8acf367a82a00f37c0ecdcb9d93f76c64d5a6
+#android:commandlinetools-linux-11076708_latest.zip	commandlinetools-linux-11076708_latest.zip	sha256:2d2d50857e4eb553af5a6dc3ad507a17adf43d115264b1afc116f95c92e5e258

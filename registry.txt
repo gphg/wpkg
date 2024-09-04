@@ -1,0 +1,12 @@
+# This file is the registry for remote url (prefix). This shorten the url by registry name.
+# Each line is one downloadable file sperated by tab. The format to adhere to is:
+#
+# <REGISTRY_NAME>	<REGISTRY_REMOTE_URL>
+#
+# Example:
+# gh https://github.com/
+#
+# Script will look up the current file relative to wpkg.sh (global default), then merged by one on $CWD (local project).
+#
+gh	https://github.com/
+android	https://dl.google.com/android/repository/
