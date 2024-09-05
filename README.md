@@ -18,7 +18,7 @@ You can customize the packages file path by setting an environment variable
 named ```WGET_PACKAGES_FILE```:
 
 ```sh
-WGET_PACKAGES_FILE=path/to/your/file wget-packages.sh
+WGET_PACKAGES_FILE=path/to/your/file wpkg.sh
 ```
 
 Please contribute by [forking](http://help.github.com/forking/) and sending a
